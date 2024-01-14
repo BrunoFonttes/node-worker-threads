@@ -21,7 +21,7 @@ parentPort.on("message", async msg => {
      * posts a message in the main thread informing the end of the execution
      */
     parentPort.postMessage(`done on threadId ${threadId}: resizing ${src} to ${width}px wide`)
-
+    
     console.timeEnd(`benchmark-${threadId}`)
 })
 
